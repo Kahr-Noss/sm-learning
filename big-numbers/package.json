@@ -9,6 +9,7 @@
     "src:build": "rm -rf ./build && tsc",
     "src:watch": "tsc -w",
     "test": "NODE_PATH=src/ jest --roots src -runInBand --detectOpenHandles",
+    "test:windows": "set NODE_PATH=src/&& jest --roots src -runInBand --detectOpenHandles",
     "test:coverage": "NODE_PATH=src/ jest --roots src -runInBand --detectOpenHandles --coverage"
   },
   "dependencies": {},
